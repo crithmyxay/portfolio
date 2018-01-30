@@ -8,44 +8,111 @@
     <link rel="stylesheet" href="stylesheets/stylesheet.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <title>Chris Rithmyxay</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+    <!-- NavBar -->
+    <nav class="navbar navbar-inverse" id="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" id="brand" href="#"><strong>Chris Rithmyxay</strong></a>
         </div>
-      </nav>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav" id="navbar-nav">
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#whoAmI">About Me</a></li> 
+              <li><a href="#contact">Contact</a></li> 
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
+            </ul>
+          </div>
+        </div>
+    </nav>
+    <!-- Landing Div -->
+    <div class="home">
+        <div class="img-box">
+            <img class="cover" src="images/darkmacbook.jpg" alt="dark-bg">
+        </div>
+    </div>
+    <!-- Projects Div -->
+    <div class="projects" id="projects">
+        <h1 id="head">Featured Projects</h1>
+        <h3><strong>mySitter</strong></h3>
+        <div class="project">
+            <div class="desc" id="desc1">
+                <p>Web app that connects parents to potential babysitters within a nearby location. <br>
+                    Utilizes swipe functions for matches or rejections of babysitters. <br>
+                    mySitter was built with HTML, CSS, Bootstrap, JavaScript, jQuery, Node.Js, Express, Sequelize. <br>
+                    <i class="devicon-html5-plain-wordmark"></i>
+                    <i class="devicon-css3-plain-wordmark"></i>
+                    <i class="devicon-bootstrap-plain-wordmark"></i>
+                    <i class="devicon-javascript-plain"></i>
+                    <i class="devicon-jquery-plain-wordmark"></i>
+                    <i class="devicon-nodejs-plain-wordmark"></i>
+                    <i class="devicon-express-original-wordmark"></i>
+                    <i class="devicon-sequelize-plain-wordmark"></i>
+                </p>
+            </div>
+            <div class="demo"><img src="images/300placeholder.png" alt=""></div>
+        </div>
+        <h3><strong>Mercedes Benz Event Parking</strong></h3>
+        <div class="project">
+            <div class="demo"><img src="images/300placeholder.png" alt=""></div>
+            <div class="desc" id="desc2">
+                <p>A web app that shows you events to Mercedes Benz Stadium in Atlanta, GA and the surrounding parking lots/costs on the same day. <br>
+                    Pulls data from Ticket Master API showing date, namea and price ranges of event. <br>
+                    The date is then given to ParkWhiz's API which gives the coordinates to draw markers on Google Map's API to indicate parking prices and locations. <br>
+                    This web app was built with HTML, CSS, JavaScript, jQuery, and AJAX requests. <br>
+                    <i class="devicon-html5-plain-wordmark"></i>
+                    <i class="devicon-css3-plain-wordmark"></i>
+                    <i class="devicon-javascript-plain"></i>
+                    <i class="devicon-jquery-plain-wordmark"></i>
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- About Me Div -->
+    <div class="whoAmI" id="whoAmI">
+        <h1 id="head">Who Am I?</h1>
+        <div class="aboutMe">
+            <div class="bio">
+                <p>
+                    Hi, my name is Chris. I'm a full stack developer in Atlanta, GA. I began my developing in the early 2000s doing simple HTML websites for fun. <br>
+                    After working in numerous different industries, I realized that I wanted to get back to something I was interested in. <br>
+                    I began self studying in web development and enrolled myself into Digital Crafts 16-week Immersive Coding Boot Camp. <br>
+                    Through their accelerated program, I learned front end and back end web development. 
+                </p>
+            </div>
+            <div class="picture">
+                <img class="cover" id="pic" src="images/300placeholder.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Skills -->
+    <h1 id="head">Skills</h1>
+    <div class="skills">
+        <div><i class="devicon-html5-plain-wordmark"></i></div>
+        <div><i class="devicon-css3-plain-wordmark"></i></div>
+        <div><i class="devicon-bootstrap-plain-wordmark"></i></div>
+        <div><i class="devicon-javascript-plain"></i></div>
+        <div><i class="devicon-jquery-plain-wordmark"></i></div>
+        <div><i class="devicon-nodejs-plain-wordmark"></i></i></div>
+        <div><i class="devicon-express-original-wordmark"></i></div>
+        <div><i class="devicon-sequelize-plain-wordmark"></i></div>
+    </div>
+    <!-- Contact -->
+    <div class="contact" id="contact">
+        <h1 id="head">Let's Chit Chat</h1>
+        form
+    </div>
 </body>
 </html>

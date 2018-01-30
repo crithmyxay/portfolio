@@ -1,6 +1,139 @@
+body {
+    width: 100%;
+}
+
+#head {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    /* text-align: left; */
+}
+
+/* navbar styling */
+#brand {
+    color:white;
+}
+
+
+#navbar {
+    margin-bottom: 0px;
+    background-color: #060a0e;
+    border: none;
+    border-radius: 0%;
+}
+
+.navbar-inverse {
+    background-color: #060a0e;
+    border: none;
+}
+
+/* landing page styling */
+img {
+    height: 100%;
+    border: none;
+}
+
+.img-box {
+    height: 667px;
+}
+  
+.cover {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* projects styling */
+.projects, .whoAmI, .contact, .skills {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p > i {
+    font-size: 40px;
+    color: #14c1ac;
+}
+
+.bio > p {
+    
+}
+
+
+/* aboutMe styling */
+
+
+/* skills styling */
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.skills > div >  i {
+    font-size: 72px;
+    color: #14c1ac;
+}
+
+.skills > div {
+    margin: 5%;
+}
+
+/* contacts styling */
 
 
 @media screen and (min-width: 768px) {
+    #head {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .img-box {
+        height: 1024px;
+    }
+    
+    #navbar-nav {
+        float: right;
+        margin: 0;
+    }
+
+    .project, .aboutMe {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .demo, .bio {
+        width: 60%;
+        margin: 1%;
+    }
+
+    #desc1 {
+        text-align: right;
+    }
+
+    #desc2 {
+        text-align: left;
+    }
+
+    .picture {
+        border-radius: 50%;
+        border: 10px solid white;
+        /* background-color: white; */
+    }
+    
+    #pic {
+        border-radius: 50%;
+        /* border: 10px solid white; */
+    }
+
+    .bio > p {
+        text-align: right;
+    }
+
+    .aboutMe {
+        background-color: #8080807a;
+    }
 
 }
 
