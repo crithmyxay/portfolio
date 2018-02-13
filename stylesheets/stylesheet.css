@@ -57,7 +57,7 @@ p > i {
 }
 
 iframe {
-    width: 100%;
+    width: 315px;
 }
 
 /* .bio > p {
@@ -164,19 +164,20 @@ iframe {
     }
 
     iframe {
-        width: 560px;
         height: 315px;
     }
 
 }
 
 @media screen and (min-width:1024px) {
+    iframe {
+        height: 315px;
+        width: 516px;
+    }
+
 
 }
 
-@media screen and (min-width:1024px) {
-
-}
 
 @media screen and (min-width:1366px) {
 
