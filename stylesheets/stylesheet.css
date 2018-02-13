@@ -5,10 +5,12 @@ body {
 #head {
     text-align: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-p {
-    /* text-align: left; */
+i {
+    color: #14c1ac;
+    font-size: 24px;
 }
 
 /* navbar styling */
@@ -52,17 +54,21 @@ img {
 
 p > i {
     font-size: 40px;
-    color: #14c1ac;
 }
 
-.bio > p {
+iframe {
+    width: 100%;
+}
+
+/* .bio > p {
     
-}
-
+} */
 
 /* aboutMe styling */
-.whoAmI, .contact {
+.aboutMe {
     background-color: #8080807a;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 /* skills styling */
@@ -74,7 +80,6 @@ p > i {
 
 .skills > div >  i {
     font-size: 72px;
-    color: #14c1ac;
 }
 
 .skills > div {
@@ -83,11 +88,23 @@ p > i {
 
 /* contacts styling */
 
+.contactInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bye {
+    padding-bottom: 1%;
+    text-align: center;
+}
+
 
 @media screen and (min-width: 768px) {
     #head {
-        margin-top: 30px;
+        margin-top: 50px;
         margin-bottom: 30px;
+        font-size: 5rem;
     }
 
     .img-box {
@@ -107,7 +124,8 @@ p > i {
 
     .demo, .bio {
         width: 60%;
-        margin: 1%;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 
     #desc1 {
@@ -133,9 +151,22 @@ p > i {
         text-align: right;
     }
 
-    /* #whoAmI, #contact {
-        margin-bottom: 30px;
-    } */
+    i {
+        font-size: 48px;
+    }
+
+    .contactInfo {
+        justify-content: center;
+    }
+
+    .contactInfo > div > i {
+        margin-left: 25px;
+    }
+
+    iframe {
+        width: 560px;
+        height: 315px;
+    }
 
 }
 
