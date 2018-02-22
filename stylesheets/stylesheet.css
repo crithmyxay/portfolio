@@ -13,6 +13,12 @@ i {
     font-size: 24px;
 }
 
+.desc, .bio {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+
 /* navbar styling */
 #brand {
     color:white;
@@ -159,7 +165,7 @@ iframe {
         justify-content: center;
     }
 
-    .contactInfo > div > i {
+    .contactInfo > div > a > i {
         margin-left: 25px;
     }
 
@@ -174,7 +180,6 @@ iframe {
         height: 315px;
         width: 516px;
     }
-
 
 }
 
