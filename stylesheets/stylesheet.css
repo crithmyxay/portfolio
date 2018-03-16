@@ -22,16 +22,11 @@ p {
     padding: 2rem;
 }
 
-.brand {
-    font-size: 1.8rem;
-}
-
 i {
     color: #14c1ac;
     font-size: 24px;
     transition-property: top;
     transition-duration: 4s;
-
 }
 
 .skills > div > i:hover, a > i:hover {
@@ -48,6 +43,7 @@ i {
 /* navbar styling */
 #brand {
     color:white;
+    font-size: 1.8rem;
 }
 
 ul, nav, .hamburger, .navbar {
@@ -60,14 +56,12 @@ ul, nav, .hamburger, .navbar {
 }
 
 button {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-around; */
     border: 1px solid white;
     height: 35px;
     background-color: #060a0e;
 }
 
+/* 3 bar styling */
 button > div {
     height: 5px;
     width: 30px;
@@ -78,7 +72,6 @@ button > div {
 .dropdown {
     display: flex;
     flex-direction: column;
-    /* text-align: right; */
 }
 
 .hidden {
@@ -172,7 +165,6 @@ iframe {
     text-align: center;
 }
 
-
 @media screen and (min-width: 768px) {
     #head {
         margin-top: 50px;
@@ -185,7 +177,6 @@ iframe {
     }
     
     #navbar-nav {
-        /* float: right; */
         margin: 0;
     }
 
@@ -228,12 +219,10 @@ iframe {
     .picture {
         border-radius: 50%;
         border: 10px solid white;
-        /* background-color: white; */
     }
     
     #pic {
         border-radius: 50%;
-        /* border: 10px solid white; */
     }
 
     .bio > p {
@@ -263,10 +252,5 @@ iframe {
         height: 315px;
         width: 516px;
     }
-
-}
-
-
-@media screen and (min-width:1366px) {
 
 }
