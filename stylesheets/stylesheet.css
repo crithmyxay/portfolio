@@ -56,6 +56,7 @@ ul, nav, .hamburger, .navbar {
 
 .hamburger {
     float: right;
+    text-align: right;
 }
 
 button {
@@ -74,6 +75,12 @@ button > div {
     margin: 2px;
 }
 
+.dropdown {
+    display: flex;
+    flex-direction: column;
+    /* text-align: right; */
+}
+
 .hidden {
     display: none;
 }
@@ -90,6 +97,7 @@ button > div {
 
 .dropdown > a { 
     color: white;
+    padding-top: 10px;
 }
 
 /* landing page styling */
@@ -187,17 +195,14 @@ iframe {
 
     .dropdown {
         display: flex;
+        flex-direction: row;
         justify-content: space-around;
+        align-content: center;
     }
 
     .dropdown > a {
         margin-left: 10px;
         margin-right: 10px;
-    }
-
-    li {
-        display: inline;
-        float: right;
     }
 
     .project, .aboutMe {
