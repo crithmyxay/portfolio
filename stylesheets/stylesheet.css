@@ -1,5 +1,7 @@
 body {
     width: 100%;
+    /* font-family: 'Roboto Condensed', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
 }
 
 #head {
@@ -8,9 +10,33 @@ body {
     margin-bottom: 20px;
 }
 
+a { 
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+p {
+    padding: 2rem;
+}
+
+.brand {
+    font-size: 1.8rem;
+}
+
 i {
     color: #14c1ac;
     font-size: 24px;
+    transition-property: top;
+    transition-duration: 4s;
+
+}
+
+.skills > div > i:hover, a > i:hover {
+    position: relative;
+    top: -5px;
 }
 
 .desc, .bio {
@@ -24,17 +50,46 @@ i {
     color:white;
 }
 
+ul, nav, .hamburger, .navbar {
+    background-color: #060a0e;
+}
+
+.hamburger {
+    float: right;
+}
+
+button {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-around; */
+    border: 1px solid white;
+    height: 35px;
+    background-color: #060a0e;
+}
+
+button > div {
+    height: 5px;
+    width: 30px;
+    background-color: white;
+    margin: 2px;
+}
+
+.hidden {
+    display: none;
+}
 
 #navbar {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 0px;
     background-color: #060a0e;
     border: none;
     border-radius: 0%;
+    width: 100%;
 }
 
-.navbar-inverse {
-    background-color: #060a0e;
-    border: none;
+.dropdown > a { 
+    color: white;
 }
 
 /* landing page styling */
@@ -58,6 +113,10 @@ img {
     margin-top: 20px;
 }
 
+#reverse {
+    flex-direction: row-reverse;
+}
+
 p > i {
     font-size: 40px;
 }
@@ -66,15 +125,15 @@ iframe {
     width: 315px;
 }
 
-/* .bio > p {
-    
-} */
-
 /* aboutMe styling */
 .aboutMe {
     background-color: #8080807a;
     padding-top: 1%;
     padding-bottom: 1%;
+}
+
+#pic {
+    width: 300px;
 }
 
 /* skills styling */
@@ -110,7 +169,7 @@ iframe {
     #head {
         margin-top: 50px;
         margin-bottom: 30px;
-        font-size: 5rem;
+        font-size: 3rem;
     }
 
     .img-box {
@@ -118,8 +177,27 @@ iframe {
     }
     
     #navbar-nav {
-        float: right;
+        /* float: right; */
         margin: 0;
+    }
+
+    button {
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .dropdown > a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    li {
+        display: inline;
+        float: right;
     }
 
     .project, .aboutMe {

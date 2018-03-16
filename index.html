@@ -7,39 +7,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
     <link rel="stylesheet" href="stylesheets/stylesheet.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="scripts/main.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title>Chris Rithmyxay</title>
 </head>
 <body>
+    <script>
+        AOS.init();
+    </script>
     <!-- NavBar -->
-    <nav class="navbar navbar-inverse" id="navbar">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+    <div class="navbar" id="navbar">
+        <a class="brand" id="brand" href="#"><strong>Chris Rithmyxay</strong></a>
+        <div class="hamburger">
+            <button data-collapse>
+                <div></div>
+                <div></div>
+                <div></div>
             </button>
-            <a class="navbar-brand" id="brand" href="#"><strong>Chris Rithmyxay</strong></a>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav" id="navbar-nav">
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#whoAmI">About Me</a></li> 
-              <li><a href="#contact">Contact</a></li> 
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <!-- <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
-            </ul>
-          </div>
+        <div class="dropdown hidden">
+            <a href="#projects">Projects</a>
+            <a href="#whoAmI">About Me</a> 
+            <a href="#contact">Contact</a> 
         </div>
-    </nav>
+    </div>
     <!-- Landing Div -->
     <div class="home">
         <div class="img-box">
@@ -50,11 +47,31 @@
     <!-- Projects Div -->
     <div class="projects" id="projects">
         <h1 id="head">Featured Projects</h1>
-        <h3><strong>mySitter</strong></h3>
-        <div class="project">
+        <h2><strong>NeeBo</strong></h2>
+        <div class="project" data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-easing="ease-in">
+            <div class="demo"><iframe src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+            <div class="desc" id="desc2">
+                <p> NeeBo is a Robot Car kit that uses an Arduino board to recieve an input and sends signals to the motors based on which signal came in. <br>
+                    A web server was created using Node.js and Express on a Raspberry Pi which uses a Serial Port node module to send data the Arduino board.<br>
+                    It has a simple web based UI with arrows and a live stream of Pi Camera using motion. <br>
+                    It also has the ability to be controlled using a Playstation Dualshock 4 controller with the dualshock-controller node module.
+                    The information from the dualshock controller is then sent over websockets. <br>
+                    NeeBo was built with HTML, CSS, JavaScript, jQuery, Node.Js, Express, Arduino IDE, WebSockets . <br>
+                    <i class="devicon-html5-plain-wordmark"></i>
+                    <i class="devicon-css3-plain-wordmark"></i>
+                    <i class="devicon-javascript-plain"></i>
+                    <i class="devicon-jquery-plain-wordmark"></i>
+                    <i class="devicon-nodejs-plain-wordmark"></i>
+                    <i class="devicon-express-original-wordmark"></i>
+                </p>
+            </div>
+        </div>
+        <h2><strong>mySitter</strong></h2>
+        <div class="project" id="reverse" data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in">
+            <div class="demo"><img src="images/300placeholder.png" alt=""></div>
             <div class="desc" id="desc1">
-                <p> A web application that connects parents to potential babysitters within a specific nearby location. <br>
-                    Utilizes swipe actions for matches or rejections of babysitters. <br>
+                <p> A web application that allows parents to connect with potential babysitters within a certain radius.
+                    Utilizes swiping actions for matches or rejections of babysitters. <br>
                     mySitter was built with HTML, CSS, Bootstrap, JavaScript, jQuery, Node.Js, Express, Sequelize. <br>
                     <i class="devicon-html5-plain-wordmark"></i>
                     <i class="devicon-css3-plain-wordmark"></i>
@@ -66,10 +83,9 @@
                     <i class="devicon-sequelize-plain-wordmark"></i>
                 </p>
             </div>
-            <div class="demo"><img src="images/300placeholder.png" alt=""></div>
         </div>
-        <h3><strong>Mercedes Benz Event Parking</strong></h3>
-        <div class="project">
+        <h2><strong>Mercedes Benz Event Parking</strong></h2>
+        <div class="project" data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-easing="ease-in">
             <div class="demo"><iframe src="https://www.youtube.com/embed/T12mB7-7FP4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
             <div class="desc" id="desc2">
                 <p>A web app that shows you events to Mercedes Benz Stadium in Atlanta, GA and the surrounding parking lots/costs on the same day. <br>
@@ -87,13 +103,13 @@
     <!-- About Me Div -->
     <div class="whoAmI" id="whoAmI">
         <h1 id="head">Who Am I?</h1>
-        <div class="aboutMe">
+        <div class="aboutMe" data-aos="fade-up" data-aos-anchor-placement="top-center">
             <div class="bio">
                 <p>
-                    Hi, my name is Chris. I'm a full stack developer in Atlanta, GA. I began my developing in the early 2000s doing simple HTML websites for fun. 
+                    <strong>Hi, my name is Chris.</strong> I'm a full stack developer in Atlanta, GA. I began developing in the early 2000s doing simple HTML websites for fun. 
                     After working in numerous different industries, I realized that I wanted to get back to something I was interested in. 
-                    I began self studying in web development and enrolled myself into Digital Crafts 16-week Immersive Coding Boot Camp. 
-                    Through their accelerated program, I learned front end and back end web development. 
+                    I began self studying in web development and then enrolled myself into Digital Crafts 16-week Immersive Coding Boot Camp. 
+                    Through their accelerated program, I learned full-stack web development, but what I feel like I learned most was the ability to learn properly in an ever-changing industry.
                 </p>
             </div>
             <div class="picture">
@@ -115,23 +131,24 @@
             <div><i class="devicon-sequelize-plain-wordmark"></i></div>
             <div><i class="devicon-postgresql-plain-wordmark"></i></div>
             <div><i class="devicon-python-plain-wordmark"></i></div>
+            <div><i class="devicon-react-original-wordmark"></i></div>
+            <div><i class="devicon-github-plain-wordmark"></i></div>
         </div>
     </div>
     <!-- Contact -->
     <div class="contact" id="contact">
         <h1 id="head">Want to chat?</h1>
         <div class="contactInfo">
-            <div><a href="https://www.facebook.com/chris.rithmyxay"><i class="devicon-facebook-plain"></i></a></div>
-            <div><a href="https://www.linkedin.com/in/chris-rithmyxay"><i class="fab fa-linkedin"></i></a></div>
-            <div><a href="https://www.github.com/crithmyxay"><i class="devicon-github-plain-wordmark"></i></a></div>
-            <div><a href=""><i class="far fa-envelope"></i></a></div>
-            <div><a href=""><i class="far fa-file-alt"></i></a></div>
+            <div><a href="https://www.facebook.com/chris.rithmyxay" target="_blank"><i class="devicon-facebook-plain"></i></a></div>
+            <div><a href="https://www.linkedin.com/in/chris-rithmyxay" target="_blank"><i class="fab fa-linkedin"></i></a></div>
+            <div><a href="https://www.github.com/crithmyxay" target="_blank"><i class="devicon-github-plain-wordmark"></i></a></div>
+            <div><a href="mailto:crithmyxay@gmail.com?Subject=Hi%20there!" target="_top"><i class="far fa-envelope"></i></a></div>
         </div>
     </div>
     <!-- Funny photo on exit. -->
     <div class="groot">
         <div>
-            <h1 id="head">Thanks for visiting!</h1>
+            <h2 id="head">Thanks for visiting!</h2>
         </div>
         <div class="bye">
             <img src="images/groot.gif" alt="dancing groot">
