@@ -39,16 +39,23 @@
     <!-- Landing Div -->
     <div class="home">
         <div class="img-box">
-            <img class="cover" src="images/office.jpg" alt="dark-bg">
+            <img class="cover" src="images/office-min.jpg" alt="dark-bg">
         </div>
         <div class="triangle"></div>
     </div>
     <!-- Projects Div -->
     <div class="projects" id="projects">
         <h1 id="head">Featured Projects</h1>
-        <h2><strong>NeeBo</strong></h2>
+        <h2><a href="https://github.com/crithmyxay/robot-car" target="_blank"><strong>NeeBo</strong></a></h2>
         <div class="project" data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-easing="ease-in">
-            <div class="demo"><iframe src="" frameborder="0" allow="encrypted-media" allowfullscreen></iframe></div>
+            <div class="demo">
+                <div class = "slide" data-slide>
+                    <!-- Next and previous buttons -->
+                    <a class="prev" data-prev>&#10094;</a>
+                    <a class="next" data-next>&#10095;</a>  
+               </div>
+               <div style="text-align:center" data-dot></div>
+            </div>
             <div class="desc" id="desc2">
                 <p> NeeBo is a Robot Car kit that uses an Arduino board to recieve an input and sends signals to the motors based on which signal came in. <br>
                     A web server was created using Node.js and Express on a Raspberry Pi which uses a Serial Port node module to send data the Arduino board.<br>
@@ -65,12 +72,13 @@
                 </p>
             </div>
         </div>
-        <h2><strong>mySitter</strong></h2>
+        <h2><a href="https://github.com/ebates92/babysitter-app" target="_blank"><strong>mySitter</strong></a></h2>
         <div class="project" id="reverse" data-aos="fade-right" data-aos-anchor-placement="top-center" data-aos-easing="ease-in">
-            <div class="demo"><img src="images/300placeholder.png" alt=""></div>
+            <div class="demo"><img class="babysitter" src="images/babysitter-min.png" alt=""></div>
             <div class="desc" id="desc1">
                 <p> A web application that allows parents to connect with potential babysitters within a certain radius.
-                    Utilizes swiping actions for matches or rejections of babysitters. <br>
+                    Utilizes swiping actions for matches or rejections of babysitters. 
+                    After a match as been made, it will then make a list of matches for the parent to use and the parent can then contact the babysitter via messaging and begin negotiations.<br>
                     mySitter was built with HTML, CSS, Bootstrap, JavaScript, jQuery, Node.Js, Express, Sequelize. <br>
                     <i class="devicon-html5-plain-wordmark"></i>
                     <i class="devicon-css3-plain-wordmark"></i>
@@ -83,7 +91,7 @@
                 </p>
             </div>
         </div>
-        <h2><strong>Mercedes Benz Event Parking</strong></h2>
+        <h2><a href="https://github.com/crithmyxay/MercedesBenzParking" target="blank"><strong>Mercedes Benz Event Parking</strong></a></h2>
         <div class="project" data-aos="fade-left" data-aos-anchor-placement="top-center" data-aos-easing="ease-in">
             <div class="demo"><iframe src="https://www.youtube.com/embed/T12mB7-7FP4" frameborder="0" allow="encrypted-media" allowfullscreen></iframe></div>
             <div class="desc" id="desc2">
@@ -124,18 +132,18 @@
     <div class="skillsContainer">
     <h1 id="head">Skills</h1>
         <div class="skills">
-            <div><i class="devicon-html5-plain-wordmark"></i></div>
-            <div><i class="devicon-css3-plain-wordmark"></i></div>
-            <div><i class="devicon-bootstrap-plain-wordmark"></i></div>
-            <div><i class="devicon-javascript-plain"></i></div>
-            <div><i class="devicon-jquery-plain-wordmark"></i></div>
-            <div><i class="devicon-nodejs-plain-wordmark"></i></i></div>
-            <div><i class="devicon-express-original-wordmark"></i></div>
-            <div><i class="devicon-sequelize-plain-wordmark"></i></div>
-            <div><i class="devicon-postgresql-plain-wordmark"></i></div>
-            <div><i class="devicon-python-plain-wordmark"></i></div>
-            <div><i class="devicon-react-original-wordmark"></i></div>
-            <div><i class="devicon-github-plain-wordmark"></i></div>
+            <div><i class="devicon-html5-plain-wordmark" data-aos="fade-down" data-aos-anchor-placement="top-center"></i></div>
+            <div><i class="devicon-css3-plain-wordmark" data-aos="fade-down" data-aos-anchor-placement="top-center"></i></div>
+            <div><i class="devicon-bootstrap-plain-wordmark" data-aos="fade-down" data-aos-anchor-placement="top-center"></i></div>
+            <div><i class="devicon-javascript-plain" data-aos="fade-down" data-aos-anchor-placement="top-center"></i></div>
+            <div><i class="devicon-jquery-plain-wordmark" data-aos="fade-down" data-aos-anchor-placement="top-center"></i></div>
+            <div><i class="devicon-nodejs-plain-wordmark" data-aos="fade-down" data-aos-anchor-placement="top-center"></i></i></div>
+            <div><i class="devicon-express-original-wordmark" data-aos="fade-down" data-aos-anchor-placement="top-center"></i></div>
+            <div><i class="devicon-sequelize-plain-wordmark" data-aos="fade-down" data-aos-anchor-placement="top-center"></i></div>
+            <div><i class="devicon-postgresql-plain-wordmark" data-aos="fade-down" data-aos-anchor-placement="top-center"></i></div>
+            <div><i class="devicon-python-plain-wordmark" data-aos="fade-down" data-aos-anchor-placement="top-center"></i></div>
+            <div><i class="devicon-react-original-wordmark" data-aos="fade-down" data-aos-anchor-placement="top-center"></i></div>
+            <div><i class="devicon-github-plain-wordmark" data-aos="fade-down" data-aos-anchor-placement="top-center"></i></div>
         </div>
     </div>
     <!-- Contact -->
