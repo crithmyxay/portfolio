@@ -1,6 +1,5 @@
 body {
     width: 100%;
-    /* font-family: 'Roboto Condensed', sans-serif; */
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -16,7 +15,7 @@ a {
 }
 
 a:hover {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 p {
@@ -165,11 +164,6 @@ iframe {
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
-/* .prev:hover, .next:hover {
-background-color: rgba(0,0,0,0.8);
-} */
-
 /* Caption text */
 .text {
     color: #000;
@@ -208,7 +202,6 @@ background-color: rgba(0,0,0,0.8);
 
 .labels {
     color: #9e2234;
-    /* background-color: red; */
     font-family:"Lucida Grande", "Arial", sans-serif;
     font-size: 8px;
     text-align: left;
@@ -228,7 +221,6 @@ background-color: rgba(0,0,0,0.8);
 }
 
 /* skills styling */
-
 .skills {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
