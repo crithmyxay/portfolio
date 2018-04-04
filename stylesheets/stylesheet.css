@@ -218,6 +218,7 @@ iframe {
 
 #pic {
     width: 300px;
+    height: auto;
 }
 
 /* skills styling */

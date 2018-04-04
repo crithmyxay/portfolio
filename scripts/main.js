@@ -32,7 +32,7 @@ function makeImages() {
   for (i=0; i<imgPath.length; i++) {
       var $drawLink = $('<a>', {
           class: 'slideLinks fade',
-          href: '#',
+          href: 'https://github.com/crithmyxay/robot-car',
           'data-slide-image': ''
       })
       var $drawImg = $('<img>', {
